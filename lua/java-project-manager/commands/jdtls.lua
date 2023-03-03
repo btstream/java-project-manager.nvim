@@ -3,9 +3,9 @@ local execute_command = require("jdtls.util").execute_command
 
 local COMMANDS = require("java-project-manager.const.commands")
 
-local NodeKind = require("java-project-manager.const.node-data").NodeKind
-local TypeKined = require("java-project-manager.const.node-data").TypeKind
-local CPE = require("java-project-manager.const.node-data").ContainerEntryKind
+-- local NodeKind = require("java-project-manager.const.node-data").NodeKind
+-- local TypeKined = require("java-project-manager.const.node-data").TypeKind
+-- local CPE = require("java-project-manager.const.node-data").ContainerEntryKind
 
 local M = {}
 
@@ -28,7 +28,7 @@ function M.refreshLibraries() end
 
 function M.getPackageData(arguments)
     local e, packages = execute_command({
-        command = COMMANDS.JAVA_PROJECT_LIST,
+        command = COMMANDS.JAVA_GETPACKAGEDATA,
         arguments = arguments,
     })
     if e then

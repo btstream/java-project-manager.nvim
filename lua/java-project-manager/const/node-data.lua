@@ -25,6 +25,11 @@ M.ContainerEntryKind = {
     CPE_VARIABLE     = 4,
     CPE_CONTAINER    = 5,
 }
+
+M.PackageRootKind = {
+    K_SOURCE      = 1,
+    K_BINARY      = 2
+}
 -- stylua: ignore end
 
 return M
